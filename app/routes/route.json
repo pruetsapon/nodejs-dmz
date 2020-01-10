@@ -1,0 +1,10 @@
+[
+    {
+        "path": "/account",
+        "methods": ["get","post"]
+    },
+    {
+        "path": "/account/verify",
+        "methods": ["post"]
+    }
+]
