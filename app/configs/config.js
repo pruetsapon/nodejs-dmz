@@ -6,7 +6,7 @@ module.exports = {
     },
     api: {
       url: process.env.API_URL,
-      headers: process.env.API_HEADERS.split(',')
+      headers: process.env.API_HEADERS != '' ? process.env.API_HEADERS.split(',') : []
     },
     log: {
       path: process.env.LOG_PATH || './logs/logs_%DATE%.log',

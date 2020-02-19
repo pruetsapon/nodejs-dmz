@@ -1,16 +1,5 @@
 const rq = require('request-promise');
 const config = require('../configs/config').api;
-const fs = require('fs')
-const header = (headers) => {
-    let header = {
-        'accept-charset': 'utf-8',
-        'content-type': headers['content-type']
-    };
-    config.headers.forEach(h => {
-        header[h] = headers[h];
-    });
-    return header;
-}
 
 const newerror = (err) => {
     let error = new Error();
@@ -32,7 +21,7 @@ class Request {
             method: method,
             json:true,
             uri: `${config.url}${url}`,
-            headers: header(headers)
+            headers: headers
         };
 
         if(files && files.file)

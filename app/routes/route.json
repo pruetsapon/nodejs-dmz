@@ -1,7 +1,7 @@
 [
     {
-        "path": "/account",
-        "methods": ["get","post"]
+        "path": "/account/:id",
+        "methods": ["get","put"]
     },
     {
         "path": "/account/verify",
