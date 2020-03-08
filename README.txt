@@ -21,4 +21,4 @@ Some Curl command examples
 =====================================
 
 curl -i -H "Content-Type: application/json" -X POST -d "{'account':'u1234', 'password':'1234'}" http://localhost:3001/account/verify
-curl -i -H "Content-Type: application/json" http://localhost:1234/account/1234
+curl -i -H "Content-Type: application/json" -X GET http://localhost:1234/account/1234
